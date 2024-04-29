@@ -1,0 +1,419 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Muzei3"
+    android:background="@drawable/bg">
+
+    <ImageView
+        android:id="@+id/imageView40"
+        android:layout_width="228dp"
+        android:layout_height="82dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/img" />
+
+    <ImageView
+        android:id="@+id/imageView50"
+        android:layout_width="228dp"
+        android:layout_height="82dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.511"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/img2" />
+
+    <ImageView
+        android:id="@+id/imageView60"
+        android:layout_width="53dp"
+        android:layout_height="194dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.918"
+        app:srcCompat="@drawable/img4" />
+
+    <ImageView
+        android:id="@+id/imageView70"
+        android:layout_width="53dp"
+        android:layout_height="194dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView60"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.146"
+        app:srcCompat="@drawable/img5" />
+
+    <ImageView
+        android:id="@+id/imageView90"
+        android:layout_width="53dp"
+        android:layout_height="194dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.081"
+        app:srcCompat="@drawable/img4" />
+
+    <ImageView
+        android:id="@+id/imageView80"
+        android:layout_width="53dp"
+        android:layout_height="194dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView90"
+        app:layout_constraintVertical_bias="0.853"
+        app:srcCompat="@drawable/img5" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Кто проживал в этом доме?"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.157"/>
+
+    <com.example.testappmuzei2.RoundImageView
+        android:id="@+id/imageView1"
+        android:layout_width="250dp"
+        android:layout_height="150dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/textView1"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintStart_toStartOf="@+id/textView1"
+        app:layout_constraintTop_toBottomOf="@+id/textView1"
+        app:layout_constraintVertical_bias="0.08"
+        app:srcCompat="@drawable/vopros13"
+        />
+
+    <RadioGroup
+        android:id="@+id/radioGroup1"
+        android:layout_width="200dp"
+        android:layout_height="140dp"
+        android:layout_marginTop="48dp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView1"
+        app:layout_constraintHorizontal_bias="0.484"
+        app:layout_constraintStart_toStartOf="@+id/imageView1"
+        app:layout_constraintTop_toBottomOf="@+id/imageView1"
+        >
+
+        <RadioButton
+            android:id="@+id/radio1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Соловьевы" />
+
+        <RadioButton
+            android:id="@+id/radio2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Грачевы" />
+
+        <RadioButton
+            android:id="@+id/radio3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Игнатьевы" />
+
+    </RadioGroup>
+
+    <Button
+        android:background="@drawable/custom_button_2"
+        android:id="@+id/button1"
+        android:layout_width="130dp"
+        android:layout_height="50dp"
+        android:text="Дальше"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/radioGroup1"
+        app:layout_constraintHorizontal_bias="0.457"
+        app:layout_constraintStart_toStartOf="@+id/radioGroup1"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup1"
+        app:layout_constraintVertical_bias="0.406" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="250dp"
+        android:layout_height="150dp"
+        android:text="Когда завершились реставрационные работы Усадьбы братьев Соловьевых?"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.158"
+        android:visibility="invisible"/>
+
+    <com.example.testappmuzei2.RoundImageView
+        android:id="@+id/imageView2"
+        android:layout_width="250dp"
+        android:layout_height="150dp"
+        android:visibility="invisible"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/textView2"
+        app:layout_constraintHorizontal_bias="0.509"
+        app:layout_constraintStart_toStartOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_constraintVertical_bias="0.06"
+        app:srcCompat="@drawable/vopros23" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup2"
+        android:layout_width="200dp"
+        android:layout_height="140dp"
+        android:layout_marginTop="48dp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView2"
+        app:layout_constraintHorizontal_bias="0.484"
+        app:layout_constraintStart_toStartOf="@+id/imageView2"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2"
+        android:visibility="invisible">
+
+        <RadioButton
+            android:id="@+id/radio4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="2021" />
+
+        <RadioButton
+            android:id="@+id/radio5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="2017" />
+
+        <RadioButton
+            android:id="@+id/radio6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="2018" />
+
+    </RadioGroup>
+
+    <Button
+        android:background="@drawable/custom_button_2"
+        android:id="@+id/button2"
+        android:layout_width="130dp"
+        android:layout_height="50dp"
+        android:text="Дальше"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/radioGroup2"
+        app:layout_constraintHorizontal_bias="0.485"
+        app:layout_constraintStart_toStartOf="@+id/radioGroup2"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup2"
+        app:layout_constraintVertical_bias="0.406"
+        android:visibility="invisible"/>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="266dp"
+        android:layout_height="84dp"
+        android:textAlignment="center"
+        android:text="В каком веке \nбыл построен дом Соловьевых?"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.157" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup3"
+        android:layout_width="150dp"
+        android:gravity="center"
+        android:layout_height="150dp"
+        android:layout_marginTop="150dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        android:visibility="invisible">
+
+        <RadioButton
+            android:id="@+id/radio7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="XXI" />
+
+        <RadioButton
+            android:id="@+id/radio8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="XXII" />
+
+        <RadioButton
+            android:id="@+id/radio9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="XIX" />
+
+    </RadioGroup>
+
+    <Button
+        android:background="@drawable/custom_button_2"
+        android:id="@+id/button3"
+        android:layout_width="130dp"
+        android:layout_height="50dp"
+        android:text="Дальше"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/radioGroup3"
+        app:layout_constraintHorizontal_bias="0.457"
+        app:layout_constraintStart_toStartOf="@+id/radioGroup3"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup3"
+        app:layout_constraintVertical_bias="0.406"
+        android:visibility="invisible"/>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="255dp"
+        android:layout_height="94dp"
+        android:textAlignment="center"
+        android:text="С какого года здесь \n жила семья Василия Федоровича Соловьева?"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.157" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup4"
+        android:layout_width="150dp"
+        android:layout_height="170dp"
+        android:layout_marginTop="80dp"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.484"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        android:visibility="invisible">
+
+        <RadioButton
+            android:id="@+id/radio10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="1764" />
+
+        <RadioButton
+            android:id="@+id/radio11"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="1894" />
+
+        <RadioButton
+            android:id="@+id/radio12"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="1895" />
+
+    </RadioGroup>
+
+    <Button
+        android:background="@drawable/custom_button_2"
+        android:id="@+id/button4"
+        android:layout_width="130dp"
+        android:layout_height="50dp"
+        android:text="Дальше"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/radioGroup4"
+        app:layout_constraintHorizontal_bias="0.457"
+        app:layout_constraintStart_toStartOf="@+id/radioGroup4"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup4"
+        app:layout_constraintVertical_bias="0.406"
+        android:visibility="invisible"/>
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="289dp"
+        android:layout_height="54dp"
+        android:text="Кем были братья Соровьевы?"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.157" />
+
+    <com.example.testappmuzei2.RoundImageView
+        android:id="@+id/imageView5"
+        android:layout_width="250dp"
+        android:layout_height="150dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/textView5"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintStart_toStartOf="@+id/textView5"
+        app:layout_constraintTop_toBottomOf="@+id/textView5"
+        app:layout_constraintVertical_bias="0.08"
+        app:srcCompat="@drawable/vopros51"
+        android:visibility="invisible"/>
+
+    <RadioGroup
+        android:id="@+id/radioGroup5"
+        android:layout_width="150dp"
+        android:layout_height="140dp"
+        android:layout_marginTop="130dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.484"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5"
+        android:visibility="invisible">
+
+        <RadioButton
+            android:id="@+id/radio13"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Врачами" />
+
+        <RadioButton
+            android:id="@+id/radio14"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Космонавты" />
+
+        <RadioButton
+            android:id="@+id/radio15"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Музыкантами" />
+
+    </RadioGroup>
+
+    <Button
+        android:background="@drawable/custom_button_2"
+        android:id="@+id/button5"
+        android:layout_width="130dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="90dp"
+        android:text="Завершить тест"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/radioGroup5"
+        app:layout_constraintHorizontal_bias="0.457"
+        app:layout_constraintStart_toStartOf="@+id/radioGroup5"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup5"
+        app:layout_constraintVertical_bias="0.406"
+        android:visibility="invisible"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
